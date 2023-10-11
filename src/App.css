@@ -1,0 +1,22 @@
+:root {
+  --accent-font: "Overpass", sans-serif;
+  --main-font: "Montserrat", sans-serif;
+  --main-white: #eff5fd;
+  --main-black: #171717;
+  --main-blue: #396cc4;
+  --main-gradient: var(
+    linear-gradient(
+      90deg,
+      #0038a5 3.77%,
+      #396cc4 54.99%,
+      #8b9672 79.03%,
+      #f5cd09 113.87%,
+      rgba(38, 98, 215, 0) 113.87%
+    )
+  );
+}
+
+.App {
+  font-family: var(--main-font);
+  background-color: var(--main-black);
+}
