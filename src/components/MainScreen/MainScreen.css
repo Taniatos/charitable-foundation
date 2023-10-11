@@ -154,6 +154,7 @@
   .wrapper {
     max-width: 80%;
   }
+ 
 }
 @media only screen and (max-width: 912px) {
   .main-page-title {
@@ -165,8 +166,12 @@
   .main-page-paragraph {
     font-size: 1em;
   }
+  .main-page-text-container {
+  margin-top: 180px;
+  margin-bottom: 200px;
 }
-@media only screen and (max-width: 912px) {
+}
+@media only screen and (max-width: 820px) {
   .main-page-title {
     font-size: 1.1em;
   }
