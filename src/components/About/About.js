@@ -14,6 +14,8 @@ export default function MainScreen() {
             voluptatum cum eveniet placeat.eveniet placeat molestiae voluptatum
             cum eveniet placeat.
           </p>
+        </div>
+        <div class="about-text">
           <p>
             Sit eaque pariatur est voluptatem nulla a molestiae voluptatum cum
             eveniet placeat. Et explicabo similique sed fugit quos non sunt
@@ -22,12 +24,6 @@ export default function MainScreen() {
             aut obcaecati voluptas sed alias corporis aut quia tempora rem
             suscipit quos.
           </p>
-        </div>
-        <div class="about-image">
-          <img
-            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/100/081/original/photo-about.png?1697071002"
-            alt="Foundation"
-          />
         </div>
       </div>
     </section>
