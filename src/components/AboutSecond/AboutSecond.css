@@ -1,0 +1,25 @@
+.about-second-page {
+  background: linear-gradient(90deg, #f5cd09 60%, #171717 40%);
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.about-second-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 80px;
+}
+.about-second-title {
+  margin-bottom: 12px;
+  font-family: var(--accent-font);
+  font-weight: 1000;
+  color: var(--main-black);
+  font-size: 5em;
+}
+.about-second-subtitle {
+  margin-bottom: 12px;
+  font-family: var(--accent-font);
+  font-weight: 1000;
+  color: var(--main-black);
+  font-size: 5em;
+}
+

@@ -1,0 +1,55 @@
+.animated-title {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  
+  .animated-title__static {
+    margin-bottom: 12px;
+    font-family: var(--accent-font);
+    font-weight: 1000;
+    color: #2d2d2d;
+    font-size: 5em;
+  }
+
+  .animated-title__animated {
+    margin-bottom: 40px;
+    font-family: var(--accent-font);
+    color: #2d2d2d;
+    font-weight: 800;
+    font-size: 5em;
+
+    .content {
+      position: relative;
+      display: inline-block;
+      overflow: hidden;
+      height: 1.2em; 
+      
+      &__container {
+        overflow: hidden;
+        height: 1.2em;
+        padding: 0;
+
+        &__list {
+          margin: 0;
+          padding-left: 0;
+          list-style: none;
+          animation: change 20s linear infinite; 
+
+          &__item {
+            line-height: 1.2em;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes change {
+  0%, 20% {transform: translateY(0);}
+  25%, 45% {transform: translateY(-1.2em);}
+  50%, 70% {transform: translateY(-2.4em);}
+  75%, 95% {transform: translateY(-3.6em);}
+  100% {transform: translateY(-4.8em);}
+}
+
