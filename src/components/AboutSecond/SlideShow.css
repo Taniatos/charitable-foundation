@@ -48,4 +48,9 @@
   right: 10px;
 }
 
-
+@media only screen and (max-width: 640px) {
+  .button-prev img,
+  .button-next img {
+    width: 32px; 
+  }
+}

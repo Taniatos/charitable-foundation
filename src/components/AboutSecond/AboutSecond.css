@@ -2,6 +2,7 @@
   background: linear-gradient(90deg, #f5cd09 60%, #171717 40%);
   padding-top: 120px;
   padding-bottom: 120px;
+  overflow: hidden;
 }
 .about-second-grid-container {
   display: grid;
@@ -22,4 +23,25 @@
   color: var(--main-black);
   font-size: 5em;
 }
+.about-second-text p {
+  font-size: 1em;
+}
+.animated-title-box {
+  max-width: 100%;
+}
+@media only screen and (max-width: 1024px) {
+  .about-second-grid-container {
+    grid-template-columns: 1fr;
+    grid-gap: 40px;
+  }
+  .about-second-page {
+    background: #f5cd09;
+  }
+}
 
+@media only screen and (max-width: 768px) {
+  .about-second-page {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}

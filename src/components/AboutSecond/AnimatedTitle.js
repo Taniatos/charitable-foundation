@@ -1,7 +1,14 @@
 import React from "react";
 import "./AnimatedTitle.scss";
 export default function AnimatedTitle() {
-  const words = ["військовослужбовець", "батько", "чоловік", "патріот"];
+  const words = [
+    "військовослужбовець",
+    "батько",
+    "чоловік",
+    "брат",
+    "друг",
+    "патріот"
+  ];
   return (
     <div className="animated-title">
       <h1 className="animated-title__static">АНДРІЙ КВЯТКОВСЬКИЙ:</h1>

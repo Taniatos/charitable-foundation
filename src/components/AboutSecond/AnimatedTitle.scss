@@ -1,3 +1,19 @@
+$xs-screen: 300px;
+$small-screen: 485px;
+$medium-screen: 640px;
+$large-screen: 820px;
+$xl-screen: 950px;
+
+
+@keyframes change {
+  0%, 16% { transform: translateY(0); }
+  20%, 36% { transform: translateY(-1.2em); }
+  40%, 56% { transform: translateY(-2.4em); }
+  60%, 76% { transform: translateY(-3.6em); }
+  80%, 96% { transform: translateY(-4.8em); }
+  100% { transform: translateY(-6em); }
+}
+
 .animated-title {
   display: flex;
   flex-direction: column;
@@ -7,22 +23,23 @@
     margin-bottom: 12px;
     font-family: var(--accent-font);
     font-weight: 1000;
-    color: #2d2d2d;
-    font-size: 5em;
+    color: #3A3939;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+    font-size: 80px;
   }
 
   .animated-title__animated {
     margin-bottom: 40px;
     font-family: var(--accent-font);
-    color: #2d2d2d;
+    color: #3A3939;
     font-weight: 800;
-    font-size: 5em;
+    font-size: 60px;
 
     .content {
       position: relative;
       display: inline-block;
       overflow: hidden;
-      height: 1.2em; 
+      height: 1.2em;
       
       &__container {
         overflow: hidden;
@@ -33,23 +50,74 @@
           margin: 0;
           padding-left: 0;
           list-style: none;
-          animation: change 20s linear infinite; 
+          animation: change 20s linear infinite;
 
           &__item {
             line-height: 1.2em;
             margin: 0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
           }
         }
       }
     }
   }
 }
-
-@keyframes change {
-  0%, 20% {transform: translateY(0);}
-  25%, 45% {transform: translateY(-1.2em);}
-  50%, 70% {transform: translateY(-2.4em);}
-  75%, 95% {transform: translateY(-3.6em);}
-  100% {transform: translateY(-4.8em);}
+@media only screen and (max-width: $xl-screen) {
+  .animated-title {
+    .animated-title__static {
+      max-width: 600px;
+    }
+    .animated-title__animated {
+      max-width: 100%;
+      font-size: 54px;
+    }
+  }
 }
 
+@media only screen and (max-width: $large-screen) {
+  .animated-title {
+    .animated-title__static {
+      max-width: 600px;
+      font-size: 60px;
+    }
+    .animated-title__animated {
+      max-width: 100%;
+      font-size: 40px;
+    }
+  }
+}
+
+@media only screen and (max-width: $medium-screen) {
+  .animated-title {
+    .animated-title__static {
+      max-width: 400px;
+      font-size: 48px;
+    }
+    .animated-title__animated {
+      font-size: 32px;
+    }
+  }
+}
+
+@media only screen and (max-width: $small-screen) {
+  .animated-title {
+    .animated-title__static {
+      font-size: 32px;
+    }
+    .animated-title__animated {
+      font-size: 24px;
+    }
+  }
+}
+@media only screen and (max-width: $xs-screen) {
+  .animated-title {
+    .animated-title__static {
+      font-size: 24px;
+    }
+    .animated-title__animated {
+      font-size: 16px;
+    }
+  }
+}

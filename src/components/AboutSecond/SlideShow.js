@@ -4,9 +4,12 @@ import "./SlideShow.css";
 const SlideShow = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const images = [
-    "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/100/242/original/Frame_9.png?1697166751",
-    "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/100/245/original/Frame_10.png?1697167030",
-    "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/100/244/original/Frame_11.png?1697166761",
+    "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/100/448/original/photo_1.png?1697247325",
+    "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/100/449/original/photo_2.png?1697247333",
+    "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/100/450/original/photo_3.png?1697247340",
+    "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/100/451/original/photo_4.png?1697247348",
+    "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/100/452/original/photo_5.png?1697247356",
+    "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/100/453/original/photo_6.png?1697247363",
   ];
 
   useEffect(() => {

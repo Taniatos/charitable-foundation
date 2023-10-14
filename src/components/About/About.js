@@ -7,7 +7,7 @@ export default function MainScreen() {
       <div className="wrapper grid-container">
         <div class="about-text">
           <p>
-            Благодійний фонд імені Андрія Квятковського створено 2021 року...
+            Благодійний фонд імені Андрія Квятковського створено 2022 року...
             Lorem ipsum dolor sit amet. Ex consequuntur praesentium qui expedita
             asperiores in facilis facere. Sit eaque pariatur est voluptatem
             nulla a molestiae voluptatum cum eveniet placeat molestiae

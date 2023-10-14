@@ -7,7 +7,9 @@ export default function AboutSecond() {
   return (
     <section className="about-second-page">
       <div className="wrapper">
-        <AnimatedTitle />
+        <div className="animated-title-box">
+          <AnimatedTitle />
+        </div>
         <div className="about-second-grid-container">
           <div class="about-second-text">
             <p>
