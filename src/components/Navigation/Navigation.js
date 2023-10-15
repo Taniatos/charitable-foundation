@@ -1,9 +1,9 @@
 import React from "react";
 import "./Navigation.scss";
 
-export default function MainScreen() {
+export default function Navigation() {
   return (
-    <nav className="navbar navbar-dark navbar-expand-lg fixed-top">
+    <nav className="navbar navbar-dark navbar-expand-lg sticky-xl-top">
       <div className="navbar-content">
         <div className="logo-left">
           <a

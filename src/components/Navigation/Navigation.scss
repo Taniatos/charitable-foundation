@@ -12,7 +12,7 @@ nav {
     max-width: 1160px;
     margin: 0 auto;
     display: flex;
-    align-items: center;
+    // align-items: center;
     justify-content: space-between;
     height: 100%;
     padding-top: 4px;
@@ -27,22 +27,23 @@ nav {
 
 .navbar {
   padding: 10px 0px;
+  position: relative;
 
   a {
     margin-right: 24px;
     font-weight: 200;
     font-size: 1em;
     color: $main-white;
-    
+
     &:hover {
       color: $main-blue;
     }
   }
-  
+
   .menu-options {
     margin-left: auto;
   }
-  
+
   .language-switch-btn {
     padding: 2px 16px;
     border-radius: 12px;
@@ -59,10 +60,6 @@ nav {
       border: 1px solid $main-blue;
     }
   }
-  
-  .navbar-toggler {
-    margin-right: 2px;
-  }
 }
 
 .transparent {
@@ -70,25 +67,16 @@ nav {
 }
 
 @media only screen and (max-width: 1160px) {
+   nav .logo-left .logo {
+    display: none;
+  }
   .transparent {
     display: none;
   }
-}
-
-@media only screen and (max-width: 992px) {
-  nav .logo-left .logo {
-    display: none;
+  .navbar a {
+    margin-right: 0;
   }
-  
-  .navbar-toggler {
-    margin-right: 2px;
-  }
-  
-  .navbar-nav {
-    text-align: center;  
-  }
-  
-  .language-switch-btn {
-    margin-top: 10px; 
+    .language-switch-btn {
+    margin-top: 10px;
   }
 }
