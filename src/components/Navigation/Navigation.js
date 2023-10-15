@@ -5,6 +5,7 @@ export default function Navigation() {
   return (
     <nav className="navbar navbar-dark navbar-expand-lg sticky-xl-top">
       <div className="navbar-content">
+        {/* logo */}
         <div className="logo-left">
           <a
             className="nav-link"
@@ -19,7 +20,9 @@ export default function Navigation() {
             />
           </a>
         </div>
+        {/* transparent */}
         <div className="transparent"></div>
+        {/* menu */}
         <div className="menu-right">
           <button
             className="navbar-toggler"
@@ -77,10 +80,11 @@ export default function Navigation() {
               >
                 Menu
               </a>
-              <button className="language-switch-btn">UKR</button>
             </div>
           </div>
         </div>
+        {/* language change button */}
+        <button className="language-switch-btn">UKR</button>
       </div>
     </nav>
   );

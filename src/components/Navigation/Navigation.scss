@@ -45,6 +45,8 @@ nav {
   }
 
   .language-switch-btn {
+    max-width: 70px;
+    max-height: 40px;
     padding: 2px 16px;
     border-radius: 12px;
     font-size: 0.8em;
@@ -53,7 +55,7 @@ nav {
     background-color: transparent;
     transition: all ease-in-out 300ms;
     margin: 0;
-    margin-left: 4px;
+    margin-left: 12px;
 
     &:hover {
       color: $main-white;
@@ -78,7 +80,7 @@ nav {
     margin-top: 10px;
   }
 }
-@media only screen and (max-width: 940px) {
+@media only screen and (max-width: 980px) {
   .transparent {
     width: 400px;
   }
@@ -87,12 +89,11 @@ nav {
   }
   .language-switch-btn {
     margin-top: 10px;
-    margin-left: 0;
   }
 }
 @media only screen and (max-width: 680px) {
   .transparent {
-    width: 200px;
+    width: 180px;
   }
   .navbar a {
     margin-right: 0;
@@ -114,7 +115,7 @@ nav {
 }
 @media only screen and (max-width: 420px) {
   .transparent {
-    width: 140px;
+    width: 90px;
   }
   .navbar a {
     margin-right: 0;
@@ -125,7 +126,18 @@ nav {
 }
 @media only screen and (max-width: 390px) {
   .transparent {
-    width: 100px;
+    width: 80px;
+  }
+  .navbar a {
+    margin-right: 0;
+  }
+  .language-switch-btn {
+    margin-top: 10px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .transparent {
+    width: 40px;
   }
   .navbar a {
     margin-right: 0;
@@ -137,12 +149,12 @@ nav {
 
 @media only screen and (max-width: 299px) {
   .transparent {
-    width: 40px;
+    display: none;
   }
   .navbar a {
     margin-right: 0;
   }
-  .language-switch-btn {
-    margin-top: 10px;
+  .logo-left .logo {
+    display: none;
   }
 }
