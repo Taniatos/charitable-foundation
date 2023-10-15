@@ -200,6 +200,10 @@
   }
 }
 @media only screen and (max-width: 420px) {
+  .main-page-text-container {
+  margin-top: 100px;
+  margin-bottom: 200px;
+}
   .main-page-title {
     font-size: 1.2em;
     margin-bottom: 24px;
@@ -209,7 +213,7 @@
     width:100%;
   }
   .main-page-paragraph {
-    margin-bottom: 72px;
+    margin-bottom: 120px;
   }
   .glow-on-hover {
     width: 100%;
