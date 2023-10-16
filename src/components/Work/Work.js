@@ -5,11 +5,11 @@ export default function Work() {
   return (
     <section className="work-page">
       <div className="wrapper">
-        <h1 className="work-page-header">Що ми робимо?</h1>
+        <h1 className="work-page-header">Робота фонду</h1>
         <div className="work-grid-box">
           <div className="grid-top">
             <div className="mini-sections mini-section-one">
-              <h2 className="mini-section-header">Section1</h2>
+              <h2 className="mini-section-header">Section 1</h2>
               <p className="mini-section-descr">
                 Lorem ipsum dolor sit amet. Est voluptatem iure quo dolorem
                 explicabo cum libero asperiores sed corrupti assumenda. Aut sunt
@@ -18,7 +18,7 @@ export default function Work() {
               </p>
             </div>
             <div className="mini-sections mini-section-two">
-              <h2 className="mini-section-header">Section2</h2>
+              <h2 className="mini-section-header">Section 2</h2>
               <p className="mini-section-descr">
                 Lorem ipsum dolor sit amet. Est voluptatem iure quo dolorem
                 explicabo cum libero asperiores sed corrupti assumenda. Aut sunt
@@ -29,7 +29,7 @@ export default function Work() {
           </div>
           <div className="grid-bottom">
             <div className="mini-sections mini-section-three">
-              <h2 className="mini-section-header">Section3</h2>
+              <h2 className="mini-section-header">Section 3</h2>
               <p className="mini-section-descr">
                 Lorem ipsum dolor sit amet. Est voluptatem iure quo dolorem
                 explicabo cum libero asperiores sed corrupti assumenda. Aut sunt
@@ -38,7 +38,7 @@ export default function Work() {
               </p>
             </div>
             <div className="mini-sections mini-section-four">
-              <h2 className="mini-section-header">Section4</h2>
+              <h2 className="mini-section-header">Section 4</h2>
               <p className="mini-section-descr">
                 Lorem ipsum dolor sit amet. Est voluptatem iure quo dolorem
                 explicabo cum libero asperiores sed corrupti assumenda. Aut sunt
