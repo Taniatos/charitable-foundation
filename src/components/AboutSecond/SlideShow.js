@@ -1,11 +1,8 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import "./SlideShow.css";
 
 const SlideShow = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [touchStartX, setTouchStartX] = useState(null);
-  const slideshowRef = useRef(null);
-
   const images = [
     "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/100/448/original/photo_1.png?1697247325",
     "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/100/449/original/photo_2.png?1697247333",
@@ -17,11 +14,11 @@ const SlideShow = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      goToNextSlide();
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
     }, 6000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [images.length]);
 
   const goToNextSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
@@ -33,44 +30,14 @@ const SlideShow = () => {
     );
   };
 
-  const handleTouchStart = (e) => {
-    setTouchStartX(e.touches[0].clientX);
-  };
-
-  const handleTouchMove = (e) => {
-    if (touchStartX === null) {
-      return;
-    }
-
-    const touchEndX = e.touches[0].clientX;
-    const touchXDiff = touchStartX - touchEndX;
-
-    if (touchXDiff > 50) {
-      // Swipe right, go to the next slide
-      goToNextSlide();
-    } else if (touchXDiff < -50) {
-      // Swipe left, go to the previous slide
-      goToPrevSlide();
-    }
-
-    setTouchStartX(null);
-  };
-
   return (
-    <div
-      className="slideshow-container"
-      onTouchStart={handleTouchStart}
-      onTouchMove={handleTouchMove}
-      ref={slideshowRef}
-    >
+    <div className="slideshow-container">
       {images.map((image, index) => (
         <div
           className={`slide${index === currentIndex ? " active" : ""}`}
           key={index}
         >
-          <a href={image} target="_blank" rel="noopener noreferrer">
-            <img src={image} alt={`Slide ${index}`} className="image" />
-          </a>
+          <img src={image} alt={`Slide ${index}`} className="image" />
         </div>
       ))}
       <button onClick={goToPrevSlide} className="button-prev">
