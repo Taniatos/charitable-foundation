@@ -6,7 +6,7 @@ export default function MainScreen() {
     <section className="about-page">
       <div className="container wrapper">
         <div className="row">
-          <div className="col-md">
+          <div className="col-md ">
             <div class="about-text">
               <p>
                 Благодійний фонд імені Андрія Квятковського створено 2022 року...
