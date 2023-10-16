@@ -42,14 +42,14 @@ const SlideShow = () => {
       ))}
       <button onClick={goToPrevSlide} className="button-prev">
         <img
-          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/100/207/original/prev.png?1697146454"
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/100/783/original/prev.png?1697415327"
           alt="prev"
           width={60}
         />
       </button>
       <button onClick={goToNextSlide} className="button-next">
         <img
-          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/100/206/original/next.png?1697146447"
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/100/784/original/prev-1.png?1697415335"
           alt="next"
           width={60}
         />

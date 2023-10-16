@@ -2,7 +2,7 @@
   background: var(--main-black);
   background-image: linear-gradient(
       90deg,
-      #171717 6%,
+      #171717f1 6%,
       rgba(2, 2, 2, 0.58) 32%,
       rgba(23, 23, 23, 0.21) 57%,
       rgba(11, 10, 10, 0) 110%
@@ -152,6 +152,16 @@
   .wrapper {
     max-width: 80%;
   }
+  .main-page {
+    background-image: linear-gradient(
+        90deg,
+        #17171734 6%,
+        rgba(2, 2, 2, 0.393) 32%,
+        rgba(8, 8, 8, 0.21) 57%,
+        rgba(5, 5, 5, 0) 110%
+      ),
+      url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/100/039/original/mainbackground.png?1697047663);
+  }
 }
 @media only screen and (max-width: 912px) {
   .main-page-text-container {
@@ -196,21 +206,21 @@
   }
   .main-page-name {
     font-size: 2.4em;
-    width:100%;
+    width: 100%;
   }
 }
 @media only screen and (max-width: 420px) {
   .main-page-text-container {
-  margin-top: 100px;
-  margin-bottom: 200px;
-}
+    margin-top: 100px;
+    margin-bottom: 200px;
+  }
   .main-page-title {
     font-size: 1.2em;
     margin-bottom: 24px;
   }
   .main-page-name {
     font-size: 2.2em;
-    width:100%;
+    width: 100%;
   }
   .main-page-paragraph {
     margin-bottom: 120px;
@@ -227,7 +237,6 @@
   }
   .main-page-name {
     font-size: 1.6em;
-    max-width:100%;
+    max-width: 100%;
   }
- 
 }
