@@ -68,15 +68,16 @@
 }
 
 .about-text {
-  font-size: 1.2em;
+  /* font-size: 1.2em; */
+  
   font-weight: 400;
   margin-bottom: 0;
   color: var(--main-white);
 }
 @media only screen and (max-width: 1160px) {
-  .about-text {
+  /* .about-text {
     font-size: 1em;
-  }
+  } */
   .grid-container {
     padding: 50px;
   }
@@ -88,9 +89,9 @@
     grid-template-columns: 1fr;
     padding-bottom: 24px;
   }
-  .about-text {
+  /* .about-text {
     font-size: 1.3em;
-  }
+  } */
 }
 
 @media only screen and (max-width: 420px) {
@@ -99,7 +100,7 @@
     padding: 24px;
     padding-bottom: 12px;
   }
-  .about-text {
+  /* .about-text {
     font-size: 1.2em;
-  }
+  } */
 }
