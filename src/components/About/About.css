@@ -17,7 +17,9 @@
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 40px;
+  column-gap: 40px;
+  row-gap: 4px;
+
   padding: 120px 80px;
   margin: 100px auto;
   border-radius: 2px;
