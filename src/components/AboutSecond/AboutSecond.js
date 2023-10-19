@@ -24,13 +24,12 @@ export default function AboutSecond() {
               Ex consequuntur praesentium qui expedita asperiores in facilis
               facere. Sit eaque pariatur est voluptatem nulla a molestiae
               voluptatum cum eveniet placeat molestiae voluptatum cum eveniet
-              placeat.eveniet placeat molestiae voluptatum cum eveniet
-              placeat.eveniet placeat molestiae voluptatum cum eveniet
-              placeat.eveniet placeat molestiae voluptatum cum eveniet
-              placeat.eveniet placeat molestiae voluptatum cum eveniet
-              placeat.eveniet placeat molestiae voluptatum cum eveniet
-              placeat.eveniet placeat molestiae voluptatum cum eveniet
-              placeat.eveniet placeat molestiae voluptatum cum eveniet placeat.
+              Lorem ipsum dolor sit amet. Ex consequuntur praesentium qui
+              expedita asperiores in facilis facere. Sit eaque pariatur est
+              voluptatem nulla a molestiae voluptatum cum eveniet placeat
+              molestiae voluptatum cum eveniet placeat.eveniet placeat molestiae
+              voluptatum cum eveniet placeat.Lorem ipsum dolor sit amet.
+              at.eveniet placeat molestiae voluptatum cum eveniet placeat.
             </p>
           </div>
           <div class="about-second-slideshow">
