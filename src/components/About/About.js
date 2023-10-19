@@ -4,7 +4,7 @@ import "./About.css";
 export default function MainScreen() {
   return (
     <section className="about-page">
-      <div className="container wrapper">
+      <div className="about-page-container wrapper">
         <div className="row">
           <div className="col-md ">
             <div class="about-text">

@@ -1,52 +1,48 @@
+.numbers-page {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
 .numbers-wrapper {
-    padding-top: 140px;
-    padding-bottom: 140px;
-    overflow: hidden;
-    position: relative;
-    background-color: var(--main-yellow);
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    gap: 8px; 
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
 }
-
-.numbers-wrapper::before,
-.numbers-wrapper::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    height: 80px;
-    background-color: var(--main-black);
-    box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.40);
-}
-
-.numbers-wrapper::before {
-    top: 50%;
-    transform: translateY(-100%);
-}
-
-.numbers-wrapper::after {
-    bottom: 50%;
-    transform: translateY(100%);
-}
-
 .numbers-row {
-    display: flex;
-    flex-wrap: nowrap; 
-    justify-content: center; 
-    width: 850px; 
-    gap: 6px; 
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 6px;
 }
 .number-box {
-  background-color: gray;
-  color: var(--main-black);
-  border: 1px solid var(--main-white);
+  background-image: linear-gradient(
+      87deg,
+      rgba(28, 24, 24, 0.58) 5.55%,
+      rgba(39, 36, 36, 0.463) 11.83%,
+      rgba(34, 30, 30, 0.387) 99.2%
+    ),
+    url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/101/338/original/numbersbckrd.png?1697756713");
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-animation: slidein 200s;
+  animation: slidein 200s;
+
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  color: var(--main-white);
   border-radius: 4px;
   padding: 20px;
   width: 100px;
   margin: 2px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.3);
   z-index: 2;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -54,7 +50,17 @@
 .number-box:hover {
   transform: translateY(-10px);
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+  background-image: none;
+  /* background-color: #282828; */
+  background-color: var(--main-yellow);
+  color: var(--main-black);
 }
 
 .number-each {
-  margin-bottom: 10px; }
+  font-weight: 800;
+  font-size: 48px;
+}
+.number-descr-short {
+  font-weight: 600;
+  font-size: 28px;
+}
