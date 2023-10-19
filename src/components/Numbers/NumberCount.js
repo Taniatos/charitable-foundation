@@ -7,6 +7,8 @@ function NumberCount({ targetNumber }) {
   const ref = useRef();
 
   useEffect(() => {
+    const currentRef = ref.current; // Capturing the current ref
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         // When the element is within the viewport, start the animation
@@ -20,14 +22,15 @@ function NumberCount({ targetNumber }) {
     );
 
     // Start observing the component
-    if (ref.current) {
-      observer.observe(ref.current);
+    if (currentRef) {
+      observer.observe(currentRef);
     }
 
     // Clean-up the observer
     return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
+      if (currentRef) {
+        // Using captured ref for cleanup
+        observer.unobserve(currentRef);
       }
     };
   }, []); // Empty dependency array means this effect runs once
@@ -57,12 +60,12 @@ function NumberCount({ targetNumber }) {
         }
       };
 
-      
       interval = setInterval(incrementNumber, speed);
     }
 
     return () => clearInterval(interval);
-  }, [startAnimation, number, targetNumber]); 
+  }, [startAnimation, number, targetNumber]);
+
   return <span ref={ref}>{number}</span>;
 }
 
