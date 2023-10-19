@@ -49,11 +49,14 @@
 }
 .main-page-paragraph {
   color: var(--main-white);
-  font-size: 1.4em;
+  font-size: 1.2em;
   font-weight: 100;
   line-height: 120%;
   margin-top: 40px;
   margin-bottom: 40px;
+}
+.main-screen-picture {
+  max-width: 100%;
 }
 .glow-on-hover {
   width: 220px;
@@ -126,9 +129,7 @@
   top: 0;
   border-radius: 10px;
 }
-.main-screen-picture {
-  max-width: 100%;
-}
+
 @keyframes glowing {
   0% {
     background-position: 0 0;

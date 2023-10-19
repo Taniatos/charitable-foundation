@@ -5,24 +5,40 @@ export default function Numbers() {
   return (
     <section className="numbers-page">
       <div className="wrapper numbers-wrapper">
-        <div className="row">
-          <div className="col-sm">
-            <p className="number-each">hello</p>
+        {/* grid cards*/}
+        <div className="row numbers-row">
+          {/* one */}
+          <div className="col-md number-box">
+            <p className="number-each">1000+</p>
+            <p className="number-descr-short">опис опис опис</p>
+            <p className="number-descr-long">
+              зібрано lorem ipsum dolor sit amet
+            </p>
           </div>
-          <div className="col-sm">
-            <p className="number-each">hello</p>
+          {/* two */}
+          <div className="col-md number-box">
+            <p className="number-each">1000+</p>
+            <p className="number-descr-short">опис опис опис</p>
+            <p className="number-descr-long">
+              зібрано lorem ipsum dolor sit amet
+            </p>
           </div>
-          <div className="col-sm">
-            <p className="number-each">hello</p>
+          {/* three */}
+          <div className="col-md number-box">
+            <p className="number-each">1000+</p>
+            <p className="number-descr-short">опис опис опис</p>
+            <p className="number-descr-long">
+              зібрано lorem ipsum dolor sit amet lorem ipsum dolor sit amet
+              lorem ipsum dolor sit amet lorem ipsum dolor sit amet
+            </p>
           </div>
-          <div className="col-sm">
-            <p className="number-each">hello</p>
-          </div>
-          <div className="col-sm">
-            <p className="number-each">hello</p>
-          </div>
-          <div className="col-sm">
-            <p className="number-each">hello</p>
+          {/* four */}
+          <div className="col-md number-box">
+            <p className="number-each">1000+</p>
+            <p className="number-descr-short">опис опис опис</p>
+            <p className="number-descr-long">
+              зібрано lorem ipsum dolor sit amet
+            </p>
           </div>
         </div>
       </div>

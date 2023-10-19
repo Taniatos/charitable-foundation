@@ -25,8 +25,7 @@
   background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/100/079/original/aboutbackground.png?1697069123);
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
-  background-position: top;
+    background-position: top;
   list-style-type: none;
   height: 100%;
   display: flex;

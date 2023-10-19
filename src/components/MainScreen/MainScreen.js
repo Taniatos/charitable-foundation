@@ -20,7 +20,7 @@ export default function MainScreen() {
           <div>
             <img
               className="main-screen-picture"
-              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/100/045/original/person.png?1697048231"
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/101/263/original/person.png?1697676494"
               alt="mainscreen"
             />
           </div>
