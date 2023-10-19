@@ -74,16 +74,15 @@
   }
 }
 @media only screen and (max-width: 900px) {
-  .container {
+  .about-page-container {
     padding: 40px;
     padding-bottom: 24px;
   }
 }
 
 @media only screen and (max-width: 420px) {
-  .container {
-    padding: 24px;
-    padding-bottom: 12px;
+  .about-page-container {
+    padding: 12px;
   }
   .col-md {
   margin-left: 8px;
