@@ -5,10 +5,10 @@ import About from "./components/About/About";
 import AboutSecond from "./components/AboutSecond/AboutSecond";
 import Work from "./components/Work/Work";
 import Numbers from "./components/Numbers/Numbers";
+import Documents from "./components/Documents/Documents";
+import Partners from "./components/Partners/Partners";
+
 // import Blank from "./components/Blank/Blank";
-
-
-
 
 
 function App() {
@@ -21,6 +21,8 @@ function App() {
       <Work />
       {/* <Blank /> */}
       <Numbers />
+      <Documents />
+      <Partners />
       {/* <Blank /> */}
     </div>
   );

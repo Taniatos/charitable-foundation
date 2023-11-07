@@ -1,0 +1,7 @@
+.partners-page-header {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 2em;
+  color: var(--main-yellow);
+  margin-bottom: 24px;
+}
