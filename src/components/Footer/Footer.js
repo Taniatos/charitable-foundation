@@ -33,6 +33,7 @@ function Footer() {
               <a
                 href="https://www.facebook.com/profile.php?id=61550806190048"
                 target="_blank"
+                rel="noreferrer"
               >
                 {" "}
                 <img
@@ -44,6 +45,7 @@ function Footer() {
               <a
                 href="https://t.me/born_to_be_free_chervonograd?fbclid=IwAR0_9nWrNl5kmufoatUMS5mgOeTbDa95nfRG_RIHAxTtfmNOL13DuD3Lyoc"
                 target="_blank"
+                rel="noreferrer"
               >
                 {" "}
                 <img
