@@ -1,0 +1,111 @@
+.footer-page {
+  background: var(--main-black);
+  background-image: linear-gradient(
+      90deg,
+      rgba(4, 4, 4, 0.632) 0.12%,
+      rgba(4, 4, 4, 0.56) 99.9%
+    ),
+    url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/103/233/original/blue-yellow-texture.jpg?1699346491);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+  padding-bottom: 12px;
+}
+.footer-logo-left .footer-logo {
+  max-width: 130px;
+}
+
+#footer > div {
+  flex: 0 0 33.3333%;
+}
+.footer-button {
+  width: 220px;
+  height: 50px;
+  border: none;
+  letter-spacing: 0.2rem;
+  font-weight: 500;
+  outline: none;
+  color: var(--main-black);
+  background: var(--main-yellow);
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all ease-in-out 300ms;
+  margin-bottom: 40px;
+}
+.footer-button:hover {
+  background: #f6e27f;
+}
+.footer-center a {
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: none;
+  font-weight: 500;
+  font-family: var(--main-font);
+  color: var(--main-white);
+}
+.footer-contacts {
+  text-decoration: none;
+  font-weight: 500;
+  font-family: var(--main-font);
+  color: var(--main-white);
+}
+
+.footer-socials-icon {
+  max-width: 30px;
+  margin-left: 12px;
+  cursor: pointer;
+}
+.footer-socials a {
+  text-decoration: none;
+}
+.footer-credits {
+  margin-top: 160px;
+  text-align: center;
+  color: var(--main-black);
+  font-size: 14px;
+}
+.footer-credits a {
+  text-decoration: none;
+  color: var(--main-black);
+}
+
+@media (max-width: 768px) {
+  #footer {
+    flex-direction: column;
+  }
+  #footer > div {
+    flex: 0 0 100%;
+    text-align: center;
+  }
+  .footer-left,
+  .footer-right {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-socials-icon,
+  .footer-contacts {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+  .footer-facebook {
+    margin-right: 6px;
+    margin-top: 12px;
+  }
+  .footer-telegram {
+    margin-left: 6px;
+    margin-top: 12px;
+  }
+  .footer-logo-left .footer-logo {
+    padding-bottom: 40px;
+  }
+
+  .footer-right {
+    padding-top: 40px;
+  }
+}

@@ -7,6 +7,8 @@ import Work from "./components/Work/Work";
 import Numbers from "./components/Numbers/Numbers";
 import Documents from "./components/Documents/Documents";
 import Partners from "./components/Partners/Partners";
+import Footer from "./components/Footer/Footer";
+
 
 // import Blank from "./components/Blank/Blank";
 
@@ -23,6 +25,7 @@ function App() {
       <Numbers />
       <Documents />
       <Partners />
+      <Footer />
       {/* <Blank /> */}
     </div>
   );
