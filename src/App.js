@@ -5,7 +5,7 @@ import About from "./components/About/About";
 import AboutSecond from "./components/AboutSecond/AboutSecond";
 import Work from "./components/Work/Work";
 import Numbers from "./components/Numbers/Numbers";
-import Documents from "./components/Documents/Documents";
+// import Documents from "./components/Documents/Documents";
 import Partners from "./components/Partners/Partners";
 import Footer from "./components/Footer/Footer";
 
@@ -23,7 +23,7 @@ function App() {
       <Work />
       {/* <Blank /> */}
       <Numbers />
-      <Documents />
+      {/* <Documents /> */}
       <Partners />
       <Footer />
       {/* <Blank /> */}

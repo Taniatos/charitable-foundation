@@ -58,11 +58,15 @@
 
 .number-each {
   font-weight: 800;
-  font-size: 48px;
+  font-size: 70px;
 }
 .number-descr-short {
   font-weight: 600;
   font-size: 28px;
+}
+.number-descr-long {
+  font-weight: 700;
+  font-size: 20px;
 }
 
 @media only screen and (max-width: 420px) {

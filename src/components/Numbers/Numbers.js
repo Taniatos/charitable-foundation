@@ -11,47 +11,44 @@ export default function Numbers() {
           {/* one */}
           <div className="col-md number-box">
             <p className="number-each">
-              <NumberCount targetNumber={80} />+
+              <NumberCount targetNumber={20} />+
             </p>
-            <p className="number-descr-short">опис опис</p>
+            {/* <p className="number-descr-short">опис опис</p> */}
             <p className="number-descr-long">
-              зібрано lorem ipsum dolor sit amet lorem ipsum dolor sit amet
-              lorem ipsum dolor sit amet
+              ГЕНЕРАТОРІВ
             </p>
           </div>
           {/* two */}
           <div className="col-md number-box">
             <p className="number-each">
-              <NumberCount targetNumber={1000} />+
+              <NumberCount targetNumber={100} />+
             </p>
-            <p className="number-descr-short">опис опис</p>
+            {/* <p className="number-descr-short">опис опис</p> */}
             <p className="number-descr-long">
-              зібрано lorem ipsum dolor sit amet lorem ipsum dolor sit amet
-              lorem ipsum dolor sit amet
+              АПТЕЧОК
             </p>
           </div>
           {/* three */}
           <div className="col-md number-box">
             <p className="number-each">
-              <NumberCount targetNumber={200} />+
+              <NumberCount targetNumber={45} />+
             </p>
-            <p className="number-descr-short">опис опис</p>
+            {/* <p className="number-descr-short">опис опис</p> */}
             <p className="number-descr-long">
-              зібрано lorem ipsum dolor sit amet lorem ipsum dolor sit amet
-              lorem ipsum dolor sit amet
+              ТОНН ГУМАНІТАРНОЇ ДОПОМОГИ
             </p>
           </div>
           {/* four */}
           <div className="col-md number-box">
             <p className="number-each">
-              <NumberCount targetNumber={150} />+
+              <NumberCount targetNumber={60} />+
             </p>
-            <p className="number-descr-short">опис опис</p>
+            {/* <p className="number-descr-short">опис опис</p> */}
             <p className="number-descr-long">
-              зібрано lorem ipsum dolor sit amet lorem ipsum dolor sit amet
-              lorem ipsum dolor sit amet
+              ЗАКРИТИХ ЗАПИТІВ ДЛЯ ВІЙСЬКОВИХ
             </p>
           </div>
+          
         </div>
       </div>
     </section>
