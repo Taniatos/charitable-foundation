@@ -1,7 +1,7 @@
 import React from "react";
 import "./MainScreen.css";
 
-export default function MainScreen() {
+function MainScreen({ onNavigate }) {
   return (
     <section class="main-page">
       <div class="wrapper">
@@ -13,8 +13,8 @@ export default function MainScreen() {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut{" "}
             </p>
-            <button class="glow-on-hover" type="button">
-              ЗАДОНАТИТИ{" "}
+            <button class="glow-on-hover" type="button" onClick={onNavigate}>
+              ЗАДОНАТИТИ
             </button>
           </div>
           <div>
@@ -29,3 +29,4 @@ export default function MainScreen() {
     </section>
   );
 }
+export default MainScreen;

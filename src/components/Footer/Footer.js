@@ -1,7 +1,7 @@
 import React from "react";
 import "./Footer.css";
 
-function Footer() {
+function Footer({ onDonateClick }) {
   return (
     <section className="footer-page">
       <div className="wrapper">
@@ -21,7 +21,9 @@ function Footer() {
             </a>
           </div>
           <div class="footer-center text-center footer-col">
-            <button className="footer-button">ЗАДОНАТИТИ</button>
+            <button className="footer-button" onClick={onDonateClick}>
+              ЗАДОНАТИТИ
+            </button>
             <a href="https://google.com/">Про фонд</a>
             <a href="https://google.com/">Новини</a>
             <a href="https://google.com/">Документація</a>

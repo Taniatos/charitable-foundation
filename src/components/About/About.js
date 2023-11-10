@@ -1,7 +1,7 @@
 import React from "react";
 import "./About.css";
 
-export default function MainScreen() {
+function About() {
   return (
     <section className="about-page">
       <div className="about-page-container wrapper">
@@ -34,3 +34,4 @@ export default function MainScreen() {
     </section>
   );
 }
+export default About;
