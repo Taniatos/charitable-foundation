@@ -15,7 +15,7 @@ export default function Numbers() {
             </p>
             {/* <p className="number-descr-short">опис опис</p> */}
             <p className="number-descr-long">
-              ГЕНЕРАТОРІВ
+              РІЗНОГО ТИПУ ГЕНЕРАТОРІВ
             </p>
           </div>
           {/* two */}
@@ -25,7 +25,7 @@ export default function Numbers() {
             </p>
             {/* <p className="number-descr-short">опис опис</p> */}
             <p className="number-descr-long">
-              АПТЕЧОК
+              ВІЙСЬКОВИХ АПТЕЧОК
             </p>
           </div>
           {/* three */}
