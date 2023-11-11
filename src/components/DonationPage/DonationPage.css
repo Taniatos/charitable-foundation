@@ -110,6 +110,7 @@
   text-transform: uppercase;
   letter-spacing: 0.05rem;
   color: var(--main-yellow);
+  margin-bottom: 32px;
 }
 .donation-permanent-subheader {
   font-size: 14px;
@@ -174,4 +175,39 @@
 }
 .donation-permanent-button:hover {
   background: #f6e27f;
+}
+
+@media screen and (max-width: 400px) {
+  .donation-card {
+    width: 100%;
+    margin: 20px;
+    padding: 16px;
+  }
+
+  .back-to-main-arrow,
+  .donation-current-img,
+  .donation-permanent-img {
+    max-width: 30px;
+  }
+
+  .donation-current-button-text,
+  .donation-permanent-button-text {
+    font-size: 14px;
+  }
+  .donation-account-number,
+  .donation-privatbank-card,
+  .donation-privatbank-name {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .donation-current-header {
+    font-size: 24px;
+  }
+  .donation-current-button-text,
+  .donation-permanent-button-text {
+    font-size: 12px;
+    letter-spacing: 0.05rem;
+    font-weight: 400;
+  }
 }

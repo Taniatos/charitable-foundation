@@ -69,9 +69,10 @@ function DonationPage({ onNavigate }) {
             <div
               className="donation-account"
               onClick={copyBankAccountNumberToClipboard}
+              onTouchEnd={copyBankAccountNumberToClipboard}
             >
               <p className="donation-account-number">
-                UA 843052990000026006011018367
+                UA 84305299 000002600 6011018367
               </p>
               {isBankCopied ? (
                 <span className="copied-message">Copied</span>
@@ -89,6 +90,7 @@ function DonationPage({ onNavigate }) {
             <div
               className="donation-privatbank"
               onClick={copyCardNumberToClipboard}
+              onTouchEnd={copyCardNumberToClipboard}
             >
               <p className="donation-privatbank-card">4149 4991 4672 0000</p>
               <p className="donation-privatbank-name">Кінах В.М.</p>
