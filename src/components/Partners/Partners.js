@@ -15,7 +15,7 @@ function Partners() {
           />
           {/* image-2 */}
           <img
-            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/104/007/original/partner_2.png?1699995861"
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/104/046/original/partner_2.png?1700001984"
             alt="partners"
             className="partners-gallery-img"
           />
