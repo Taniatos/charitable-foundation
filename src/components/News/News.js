@@ -54,6 +54,7 @@ function News() {
             scrolling="no"
             frameBorder="0"
             allowFullScreen={true}
+            title="facebook post"
             allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
           ></iframe>
         </div>
