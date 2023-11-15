@@ -7,6 +7,7 @@ import About from "./components/About/About";
 import AboutSecond from "./components/AboutSecond/AboutSecond";
 import Work from "./components/Work/Work";
 import Numbers from "./components/Numbers/Numbers";
+import News from "./components/News/News";
 // import Documents from './components/Documents/Documents';
 import Partners from "./components/Partners/Partners";
 import Footer from "./components/Footer/Footer";
@@ -27,6 +28,7 @@ function App() {
           <AboutSecond />
           <Work />
           <Numbers />
+          <News />
           {/* <Documents /> */}
           <Partners />
           <Footer onDonateClick={navigateToDonate} />
