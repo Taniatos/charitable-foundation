@@ -56,6 +56,7 @@ function DonationPage({ onNavigate }) {
             href="https://send.monobank.ua/jar/9kjhmWEXAJ"
             target="_blank"
             className="donation-link"
+            rel="noreferrer"
           >
             <div className="donation-current-button">
               <img
@@ -119,6 +120,7 @@ function DonationPage({ onNavigate }) {
               href="https://www.google.com"
               target="_blank"
               className="donation-link"
+              rel="noreferrer"
             >
               <div className="donation-permanent-button">
                 <img
