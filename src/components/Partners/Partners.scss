@@ -1,61 +1,63 @@
 $time: 0.3s;
-
 .partners-page {
   padding-top: 40px;
   padding-bottom: 80px;
   background: var(--main-black);
-  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/100/039/original/mainbackground.png?1697047663);
+  background-image: url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/100/039/original/mainbackground.png?1697047663');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
   list-style-type: none;
   height: 100%;
-}
-.partners-page-header {
-  font-family: var(--main-font);
-  margin-bottom: 24px;
-  text-align: center;
-  color: var(--main-yellow);
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  font-size: 38px;
-  font-weight: 400;
-  text-transform: uppercase;
-}
 
-.partners-gallery {
-  display: grid;
-  grid-template-rows: repeat(2, auto);
-  grid-template-columns: repeat(10, auto);
-  justify-content: center;
-  transition: all $time ease(gravity);
-  cursor: zoom-in;
+  .partners-page-header {
+    font-family: var(--main-font);
+    margin-bottom: 24px;
+    text-align: center;
+    color: var(--main-yellow);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 38px;
+    font-weight: 400;
+    text-transform: uppercase;
 
-  @media (max-width: 1160px) {
-    .partners-gallery {
-      grid-template-columns: repeat(8, auto);
-    }
-  }
-}
-
-.partners-gallery-img {
-  object-fit: cover;
-  width: 100%;
-  height: auto;
-  position: relative;
-  box-shadow: 0 0 0 #0000;
-  transition: all $time/2 ease(downhill);
-
-  &:hover {
-    opacity: 1;
-    z-index: 1;
-    box-shadow: 1em 1em 1em #0004;
-    transition: all $time ease(downhill);
-    transform: scale(1.6);
-  }
-}
-@media only screen and (max-width: 300px) {
-    .partners-page-header {
+    @media only screen and (max-width: 300px) {
       font-size: 24px;
     }
   }
+
+  .partners-gallery {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(10, 1fr); // Default for larger screens
+    justify-content: center;
+    transition: all $time ease(gravity);
+    cursor: zoom-in;
+
+    @media (max-width: 1160px) {
+      grid-template-columns: repeat(5, 1fr); // 5 images per row for medium screens
+    }
+
+    @media (max-width: 481px) {
+      grid-template-columns: 1fr; // 1 image per row for small screens
+      grid-template-rows: repeat(5, auto); // Only 5 rows are visible
+    }
+
+    .partners-gallery-img {
+      object-fit: cover;
+      width: 100%;
+      height: auto;
+      position: relative;
+      box-shadow: 0 0 0 #0000;
+      transition: all $time/2 ease(downhill);
+
+      &:hover {
+        opacity: 1;
+        z-index: 1;
+        box-shadow: 1em 1em 1em #0004;
+        transition: all $time ease(downhill);
+        transform: scale(1.6);
+      }
+    }
+  }
+}
