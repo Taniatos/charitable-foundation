@@ -9,11 +9,13 @@
 }
 .work-page-header {
   font-family: var(--main-font);
-  font-weight: 400;
-  font-size: 2em;
-  color: var(--main-yellow);
   margin-bottom: 24px;
   text-align: center;
+  color: var(--main-yellow);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 38px;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 .grid-top,
@@ -50,4 +52,12 @@
     margin-top: 12px;
     margin-bottom: 12px;
   }
+  .work-page-header {
+  font-size: 32px;
+}
+}
+@media only screen and (max-width: 300px) {
+  .work-page-header {
+  font-size: 24px;
+}
 }

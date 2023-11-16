@@ -66,7 +66,7 @@ function News() {
   return (
     <section className="news-page">
       <div className="wrapper">
-        <h1 className="news-page-header">Останні новини</h1>
+        <h1 className="news-page-header">НОВИНИ</h1>
         <div className="news-carousel-wrapper">{renderPosts()}</div>
         <button onClick={goToPrevSlide} className="news-button-prev">
           <img

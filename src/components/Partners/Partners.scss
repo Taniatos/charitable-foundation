@@ -1,15 +1,26 @@
 $time: 0.3s;
 
 .partners-page {
+  padding-top: 40px;
   padding-bottom: 80px;
+  background: var(--main-black);
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/100/039/original/mainbackground.png?1697047663);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  list-style-type: none;
+  height: 100%;
 }
 .partners-page-header {
   font-family: var(--main-font);
-  font-weight: 400;
-  font-size: 2em;
-  color: var(--main-yellow);
   margin-bottom: 24px;
   text-align: center;
+  color: var(--main-yellow);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 38px;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 .partners-gallery {
@@ -43,3 +54,8 @@ $time: 0.3s;
     transform: scale(1.6);
   }
 }
+@media only screen and (max-width: 300px) {
+    .partners-page-header {
+      font-size: 24px;
+    }
+  }

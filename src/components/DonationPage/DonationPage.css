@@ -2,10 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* height: 100vh;
-  max-height: 100%; */
   background-color: #242323;
-  /* overflow: scroll; */
 }
 .donation-card {
   position: relative;
@@ -74,6 +71,9 @@
   cursor: pointer;
   transition: all ease-in-out 300ms;
   box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.15);
+}
+.donation-link {
+  text-decoration: none;
 }
 .donation-current-button:hover {
   background-color: #242323;
