@@ -1,11 +1,26 @@
-import React from "react";
+// Navigation.js
+import React, { useContext } from "react";
 import "./Navigation.scss";
+import { LanguageContext } from "../Navigation/LanguageContext";
 
 export default function Navigation() {
+  const { language, toggleLanguage } = useContext(LanguageContext);
+
+   const buttonClassName =
+     language === "ENG"
+       ? "language-switch-btn-eng"
+       : "language-switch-btn";
+
+
+
+  const menuItems = {
+    UKR: ["Меню1", "Меню2", "Меню3", "Меню4", "Меню5", "Меню6"],
+    ENG: ["Menu1", "Menu2", "Menu3", "Menu4", "Menu5", "Menu6"],
+  };
+
   return (
     <nav className="navbar navbar-dark navbar-expand-lg sticky-xl-top">
       <div className="navbar-content">
-        {/* logo */}
         <div className="logo-left">
           <a
             className="nav-link"
@@ -20,9 +35,7 @@ export default function Navigation() {
             />
           </a>
         </div>
-        {/* transparent */}
         <div className="transparent"></div>
-        {/* menu */}
         <div className="menu-right">
           <button
             className="navbar-toggler"
@@ -37,54 +50,22 @@ export default function Navigation() {
           </button>
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav menu-options">
-              <a
-                className="nav-link menu-style"
-                aria-current="page"
-                href="https://google.com/"
-                title="Menu1"
-              >
-                Menu
-              </a>
-              <a
-                className="nav-link menu-style"
-                href="https://google.com/"
-                title="Menu2"
-              >
-                Menu
-              </a>
-              <a
-                className="nav-link menu-style"
-                href="https://google.com/"
-                title="Menu3"
-              >
-                Menu
-              </a>
-              <a
-                className="nav-link menu-style"
-                href="https://google.com/"
-                title="Menu4"
-              >
-                Menu
-              </a>
-              <a
-                className="nav-link menu-style"
-                href="https://google.com/"
-                title="Menu5"
-              >
-                Menu
-              </a>
-              <a
-                className="nav-link menu-style"
-                href="https://google.com/"
-                title="Menu6"
-              >
-                Menu
-              </a>
+              {menuItems[language].map((menuItem, index) => (
+                <a
+                  key={index}
+                  className="nav-link menu-style"
+                  href="https://google.com/"
+                  title={menuItem}
+                >
+                  {menuItem}
+                </a>
+              ))}
             </div>
           </div>
         </div>
-        {/* language change button */}
-        <button className="language-switch-btn">UKR</button>
+        <button className={buttonClassName} onClick={toggleLanguage}>
+          {language}
+        </button>
       </div>
     </nav>
   );

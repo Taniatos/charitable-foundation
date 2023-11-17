@@ -1,20 +1,44 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./MainScreen.css";
+import { LanguageContext } from "../Navigation/LanguageContext";
 
 function MainScreen({ onNavigate }) {
+  const { language } = useContext(LanguageContext);
+
+  const content = {
+    UKR: {
+      title: "БЛАГОДІЙНИЙ ФОНД",
+      name: "ІМЕНІ АНДРІЯ КВЯТКОВСЬКОГО",
+      text: "Нижній текст",
+      donate: "ЗАДОНАТИТИ",
+    },
+    ENG: {
+      title: "ANDRII KVIATKOVSKYI",
+      name: "Charitable Foundation",
+      text: "Lorem ipsum",
+      donate: "DONATE",
+    },
+  };
+
+  const titleClass =
+    language === "ENG" ? "main-page-title-eng" : "main-page-title";
+  const nameClass =
+    language === "ENG" ? "main-page-name-eng" : "main-page-name";
+  const paragraphClass =
+    language === "ENG" ? "main-page-paragraph-eng" : "main-page-paragraph";
+  const buttonClass =
+    language === "ENG" ? "glow-on-hover-eng" : "glow-on-hover";
+
   return (
-    <section class="main-page">
-      <div class="wrapper">
-        <div class="main-page-row">
-          <div class="main-page-text-container">
-            <h2 class="main-page-title">БЛАГОДІЙНИЙ ФОНД</h2>
-            <h1 class="main-page-name">ІМЕНІ АНДРІЯ КВЯТКОВСЬКОГО</h1>
-            <p class="main-page-paragraph">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut{" "}
-            </p>
-            <button class="glow-on-hover" type="button" onClick={onNavigate}>
-              ЗАДОНАТИТИ
+    <section className="main-page">
+      <div className="wrapper">
+        <div className="main-page-row">
+          <div className="main-page-text-container">
+            <h2 className={titleClass}>{content[language].title}</h2>
+            <h1 className={nameClass}>{content[language].name}</h1>
+            <p className={paragraphClass}>{content[language].text}</p>
+            <button className={buttonClass} type="button" onClick={onNavigate}>
+              {content[language].donate}
             </button>
           </div>
           <div>
@@ -29,4 +53,5 @@ function MainScreen({ onNavigate }) {
     </section>
   );
 }
+
 export default MainScreen;

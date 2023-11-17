@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
+import { LanguageProvider } from "../src/components/Navigation/LanguageContext";
 import MainScreen from "./components/MainScreen/MainScreen";
 import DonationPage from "./components/DonationPage/DonationPage";
 import Navigation from "./components/Navigation/Navigation";
@@ -19,23 +20,27 @@ function App() {
   const navigateToMain = () => setCurrentPage("main");
 
   return (
-    <div className="App">
-      {currentPage === "main" && (
-        <>
-          <Navigation />
-          <MainScreen onNavigate={navigateToDonate} />
-          <About />
-          <AboutSecond />
-          <Work />
-          <Numbers />
-          <News />
-          {/* <Documents /> */}
-          <Partners />
-          <Footer onDonateClick={navigateToDonate} />
-        </>
-      )}
-      {currentPage === "donate" && <DonationPage onNavigate={navigateToMain} />}
-    </div>
+    <LanguageProvider>
+      <div className="App">
+        {currentPage === "main" && (
+          <>
+            <Navigation />
+            <MainScreen onNavigate={navigateToDonate} />
+            <About />
+            <AboutSecond />
+            <Work />
+            <Numbers />
+            <News />
+            {/* <Documents /> */}
+            <Partners />
+            <Footer onDonateClick={navigateToDonate} />
+          </>
+        )}
+        {currentPage === "donate" && (
+          <DonationPage onNavigate={navigateToMain} />
+        )}
+      </div>
+    </LanguageProvider>
   );
 }
 

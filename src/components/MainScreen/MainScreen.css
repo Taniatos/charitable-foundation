@@ -39,6 +39,14 @@
   text-transform: uppercase;
   margin-bottom: 32px;
 }
+.main-page-title-eng {
+  color: var(--main-white);
+  font-family: var(--accent-font);
+  font-size: 5em;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 0;
+}
 .main-page-name {
   color: var(--main-white);
   font-family: var(--accent-font);
@@ -47,7 +55,24 @@
   text-transform: uppercase;
   margin-top: 0;
 }
+.main-page-name-eng {
+  
+   color: var(--main-blue);
+  font-family: var(--accent-font);
+  font-size: 1.8em;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
 .main-page-paragraph {
+  color: var(--main-white);
+  font-size: 1.2em;
+  font-weight: 100;
+  line-height: 120%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.main-page-paragraph-eng {
   color: var(--main-white);
   font-size: 1.2em;
   font-weight: 100;
@@ -58,7 +83,8 @@
 .main-screen-picture {
   max-width: 100%;
 }
-.glow-on-hover {
+.glow-on-hover,
+.glow-on-hover-eng {
   width: 220px;
   height: 50px;
   border: none;
@@ -73,7 +99,8 @@
   border-radius: 10px;
 }
 
-.glow-on-hover:before {
+.glow-on-hover:before,
+.glow-on-hover-eng:before {
   content: "";
   background: linear-gradient(
     90deg,
@@ -101,19 +128,23 @@
   border-radius: 10px;
 }
 
-.glow-on-hover:active {
+.glow-on-hover:active,
+.glow-on-hover-eng:active {
   color: var(--main-black);
 }
 
-.glow-on-hover:active:after {
+.glow-on-hover:active:after,
+.glow-on-hover-eng:active:after {
   background: transparent;
 }
 
-.glow-on-hover:hover:before {
+.glow-on-hover:hover:before,
+.glow-on-hover-eng:hover:before {
   opacity: 1;
 }
 
-.glow-on-hover:after {
+.glow-on-hover:after,
+.glow-on-hover-eng:after {
   z-index: -1;
   content: "";
   position: absolute;
@@ -146,7 +177,8 @@
   .main-screen-picture {
     display: none;
   }
-  .main-page-paragraph {
+  .main-page-paragraph,
+  .main-page-paragraph-eng {
     max-width: 60%;
   }
   .wrapper {
@@ -169,18 +201,18 @@
     margin-left: auto;
     margin-right: auto;
   }
-  .main-page-title {
+  .main-page-title, .main-page-name-eng {
     margin-left: auto;
     margin-right: auto;
     font-size: 2em;
   }
-  .main-page-name {
+  .main-page-name, .main-page-title-eng {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     font-size: 4em;
   }
-  .main-page-paragraph {
+  .main-page-paragraph, .main-page-paragraph-eng {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -193,18 +225,18 @@
   }
 }
 @media only screen and (max-width: 860px) {
-  .main-page-title {
+  .main-page-title, .main-page-name-eng {
     font-size: 1.5em;
   }
-  .main-page-name {
+  .main-page-name, .main-page-title-eng {
     font-size: 4em;
   }
 }
 @media only screen and (max-width: 700px) {
-  .main-page-title {
+  .main-page-title, .main-page-name-eng {
     font-size: 1.2em;
   }
-  .main-page-name {
+  .main-page-name, .main-page-title-eng {
     font-size: 2.4em;
     width: 100%;
   }
@@ -214,28 +246,28 @@
     margin-top: 160px;
     margin-bottom: 200px;
   }
-  .main-page-title {
+  .main-page-title, .main-page-name-eng {
     font-size: 1.2em;
     margin-bottom: 24px;
   }
-  .main-page-name {
+  .main-page-name, .main-page-title-eng{
     font-size: 2.2em;
     width: 100%;
   }
-  .main-page-paragraph {
+  .main-page-paragraph, .main-page-paragraph-eng {
     margin-bottom: 120px;
   }
-  .glow-on-hover {
+  .glow-on-hover, .glow-on-hover-eng {
     width: 100%;
     height: 56px;
   }
 }
 @media only screen and (max-width: 299px) {
-  .main-page-title {
+  .main-page-title, .main-page-name-eng {
     font-size: 1.2em;
     margin-bottom: 24px;
   }
-  .main-page-name {
+  .main-page-name, .main-page-title-eng {
     font-size: 1.6em;
     max-width: 100%;
   }
