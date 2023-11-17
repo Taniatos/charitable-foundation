@@ -43,7 +43,7 @@ $time: 0.3s;
 
     @media (max-width: 481px) {
       grid-template-columns: repeat(
-        2,
+        3,
         1fr
       ); // 2 images per row for small screens
       grid-template-rows: repeat(10, auto);
