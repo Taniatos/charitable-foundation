@@ -42,7 +42,7 @@
 .main-page-title-eng {
   color: var(--main-white);
   font-family: var(--accent-font);
-  font-size: 5em;
+  font-size: 5.1em;
   font-weight: 400;
   text-transform: uppercase;
   margin-top: 0;
@@ -243,7 +243,7 @@
 }
 @media only screen and (max-width: 420px) {
   .main-page-text-container {
-    margin-top: 160px;
+    margin-top: 180px;
     margin-bottom: 200px;
   }
   .main-page-title, .main-page-name-eng {
@@ -252,22 +252,22 @@
   }
   
   .main-page-name{
-    font-size: 2em;
+    font-size: 2.3em;
     width: 100%;
   }
   .main-page-title-eng{
-    font-size: 2.8em;
+    font-size: 2.9em;
     width: 100%;
   }
   .main-page-paragraph, .main-page-paragraph-eng {
-    margin-bottom: 120px;
+    margin-bottom: 140px;
   }
   .glow-on-hover, .glow-on-hover-eng {
     width: 100%;
     height: 56px;
   }
 }
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 375px) {
   .main-page-title {
     font-size: 1.2em;
     margin-bottom: 24px;
