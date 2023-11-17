@@ -247,11 +247,16 @@
     margin-bottom: 200px;
   }
   .main-page-title, .main-page-name-eng {
-    font-size: 1.2em;
+    font-size: 1.3em;
     margin-bottom: 24px;
   }
-  .main-page-name, .main-page-title-eng{
-    font-size: 2.2em;
+  
+  .main-page-name{
+    font-size: 2em;
+    width: 100%;
+  }
+  .main-page-title-eng{
+    font-size: 2.8em;
     width: 100%;
   }
   .main-page-paragraph, .main-page-paragraph-eng {
@@ -262,13 +267,21 @@
     height: 56px;
   }
 }
-@media only screen and (max-width: 299px) {
-  .main-page-title, .main-page-name-eng {
+@media only screen and (max-width: 360px) {
+  .main-page-title {
     font-size: 1.2em;
     margin-bottom: 24px;
   }
-  .main-page-name, .main-page-title-eng {
+  .main-page-name-eng {
+    font-size: 1em;
+    margin-bottom: 24px;
+  }
+  .main-page-name {
     font-size: 1.6em;
+    max-width: 100%;
+  }
+  .main-page-title-eng {
+    font-size: 2.1em;
     max-width: 100%;
   }
 }
