@@ -3,7 +3,7 @@ $time: 0.3s;
   padding-top: 40px;
   padding-bottom: 80px;
   background: var(--main-black);
-  background-image: url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/100/039/original/mainbackground.png?1697047663');
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/100/039/original/mainbackground.png?1697047663");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -35,12 +35,18 @@ $time: 0.3s;
     cursor: zoom-in;
 
     @media (max-width: 1160px) {
-      grid-template-columns: repeat(5, 1fr); // 5 images per row for medium screens
+      grid-template-columns: repeat(
+        5,
+        1fr
+      ); // 5 images per row for medium screens
     }
 
     @media (max-width: 481px) {
-      grid-template-columns: 1fr; // 1 image per row for small screens
-      grid-template-rows: repeat(5, auto); // Only 5 rows are visible
+      grid-template-columns: repeat(
+        2,
+        1fr
+      ); // 2 images per row for small screens
+      grid-template-rows: repeat(10, auto);
     }
 
     .partners-gallery-img {
@@ -52,11 +58,10 @@ $time: 0.3s;
       transition: all $time/2 ease(downhill);
 
       &:hover {
+        box-shadow: none;
+        transform: none;
         opacity: 1;
-        z-index: 1;
-        box-shadow: 1em 1em 1em #0004;
-        transition: all $time ease(downhill);
-        transform: scale(1.6);
+        z-index: 0;
       }
     }
   }
