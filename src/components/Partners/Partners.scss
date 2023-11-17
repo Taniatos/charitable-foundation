@@ -29,7 +29,7 @@ $time: 0.3s;
   .partners-gallery {
     display: grid;
     grid-template-rows: repeat(2, auto);
-    grid-template-columns: repeat(10, 1fr); // Default for larger screens
+    grid-template-columns: repeat(10, 1fr); // 10 images per row for lagrer screens
     justify-content: center;
     transition: all $time ease(gravity);
     cursor: zoom-in;
@@ -45,7 +45,7 @@ $time: 0.3s;
       grid-template-columns: repeat(
         3,
         1fr
-      ); // 2 images per row for small screens
+      ); // 3 images per row for small screens
       grid-template-rows: repeat(10, auto);
     }
 

@@ -1,6 +1,7 @@
-$main-white: #fff;
+$main-white: #eff5fd;
+$main-black: #171717;
 $main-blue: #007bff;
-$nav-contents-min-width: 140px;
+$main-yellow: #F5CD09;
 
 nav {
   background: rgba(29, 26, 26, 0.29);
@@ -64,6 +65,25 @@ nav {
     }
   }
 }
+.language-switch-btn-eng {
+    max-width: 70px;
+    max-height: 40px;
+    padding: 2px 16px;
+    border-radius: 12px;
+    font-size: 0.8em;
+    border: 1px solid $main-yellow;
+    color: $main-white;
+    background-color: transparent;
+    transition: all ease-in-out 300ms;
+    margin: 0;
+    margin-left: 12px;
+
+    &:hover {
+      color: $main-black;
+      background-color: $main-yellow;
+      border: 1px solid $main-yellow;
+    }
+  }
 
 .transparent {
   width: 900px;
