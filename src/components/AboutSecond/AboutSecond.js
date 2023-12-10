@@ -11,7 +11,7 @@ export default function AboutSecond() {
           <AnimatedTitle />
         </div>
         <div className="about-second-grid-container">
-          <div class="about-second-text">
+          <div className="about-second-text">
             <p>
               Lorem ipsum dolor sit amet. Ex consequuntur praesentium qui
               expedita asperiores in facilis facere. Sit eaque pariatur est
@@ -32,7 +32,7 @@ export default function AboutSecond() {
               at.eveniet placeat molestiae voluptatum cum eveniet placeat.
             </p>
           </div>
-          <div class="about-second-slideshow">
+          <div className="about-second-slideshow">
             <SlideShow />
           </div>
         </div>

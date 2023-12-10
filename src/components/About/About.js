@@ -7,7 +7,7 @@ function About() {
       <div className="about-page-container wrapper">
         <div className="row">
           <div className="col-md ">
-            <div class="about-text">
+            <div className="about-text">
               <p>
                 Благодійний фонд імені Андрія Квятковського створено у червні
                 2022 року в пам'ять про Андрія Квятковського, воїна-героя, що
@@ -20,7 +20,7 @@ function About() {
             </div>
           </div>
           <div className="col-md">
-            <div class="about-text">
+            <div className="about-text">
               <p>
                 Зараз БФ імені Андрія Квятковського має свої офісне та складське
                 приміщення. Основним донору фонду є New Forest Group for

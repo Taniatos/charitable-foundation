@@ -6,7 +6,7 @@ function Partners() {
     <section className="partners-page">
       <div className="wrapper">
         <h1 className="partners-page-header">Співпраця</h1>
-        <div class="partners-gallery">
+        <div className="partners-gallery">
           {/* image-1 */}
           <img
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/104/006/original/partner_1.png?1699995854"

@@ -5,10 +5,10 @@ function Footer({ onDonateClick }) {
   return (
     <section className="footer-page">
       <div className="wrapper">
-        <div class="d-flex justify-content-between" id="footer">
-          <div class="footer-left footer-logo-left footer-col">
+        <div className="d-flex justify-content-between" id="footer">
+          <div className="footer-left footer-logo-left footer-col">
             <a
-              class="nav-link"
+              className="nav-link"
               aria-current="page"
               href="https://google.com/"
               title="Home"
@@ -16,11 +16,11 @@ function Footer({ onDonateClick }) {
               <img
                 src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/100/056/original/logo.png?1697057798"
                 alt="logo"
-                class="footer-logo"
+                className="footer-logo"
               />
             </a>
           </div>
-          <div class="footer-center text-center footer-col">
+          <div className="footer-center text-center footer-col">
             <button className="footer-button" onClick={onDonateClick}>
               ЗАДОНАТИТИ
             </button>
@@ -28,7 +28,7 @@ function Footer({ onDonateClick }) {
             <a href="https://google.com/">Новини</a>
             <a href="https://google.com/">Документація</a>
           </div>
-          <div class="footer-right text-end footer-col">
+          <div className="footer-right text-end footer-col">
             <p className="footer-contacts">Імейл адреса</p>
             <p className="footer-contacts">Номер телефону</p>
             <div className="footer-socials">
@@ -41,7 +41,7 @@ function Footer({ onDonateClick }) {
                 <img
                   src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/103/277/original/fb.png?1699385666"
                   alt="facebook"
-                  class="footer-socials-icon footer-facebook"
+                  className="footer-socials-icon footer-facebook"
                 />
               </a>
               <a
@@ -53,7 +53,7 @@ function Footer({ onDonateClick }) {
                 <img
                   src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/103/276/original/tg.png?1699385557"
                   alt="telegram"
-                  class="footer-socials-icon footer-telegram"
+                  className="footer-socials-icon footer-telegram"
                 />
               </a>
             </div>
