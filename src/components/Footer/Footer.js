@@ -1,7 +1,27 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Footer.css";
+import { LanguageContext } from "../Navigation/LanguageContext";
 
 function Footer({ onDonateClick }) {
+  const { language } = useContext(LanguageContext);
+
+  const translations = {
+    UKR: {
+      donate: "ЗАДОНАТИТИ",
+      about: "Про фонд",
+      news: "Новини",
+      documents: "Документація",
+    },
+    ENG: {
+      donate: "DONATE",
+      about: "About",
+      news: "News",
+      documents: "Documents",
+    },
+  };
+
+  const content = translations[language];
+
   return (
     <section className="footer-page">
       <div className="wrapper">
@@ -22,11 +42,11 @@ function Footer({ onDonateClick }) {
           </div>
           <div className="footer-center text-center footer-col">
             <button className="footer-button" onClick={onDonateClick}>
-              ЗАДОНАТИТИ
+              {content.donate}
             </button>
-            <a href="https://google.com/">Про фонд</a>
-            <a href="https://google.com/">Новини</a>
-            <a href="https://google.com/">Документація</a>
+            <a href="https://google.com/">{content.about}</a>
+            <a href="https://google.com/">{content.news}</a>
+            <a href="https://google.com/">{content.documents}</a>
           </div>
           <div className="footer-right text-end footer-col">
             <p className="footer-contacts">Імейл адреса</p>
