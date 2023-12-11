@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Partners.scss";
+import { LanguageContext } from "../Navigation/LanguageContext";
 
 function Partners() {
+  const { language } = useContext(LanguageContext);
+
+  const headerText = language === "ENG" ? "Partnership" : "Співпраця";
+
   return (
     <section className="partners-page">
       <div className="wrapper">
-        <h1 className="partners-page-header">Співпраця</h1>
+        <h1 className="partners-page-header">{headerText}</h1>
         <div className="partners-gallery">
           {/* image-1 */}
           <img
