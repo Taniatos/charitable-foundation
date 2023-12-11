@@ -1,7 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import "./News.css";
+import { LanguageContext } from "../Navigation/LanguageContext";
 
 function News() {
+  const { language } = useContext(LanguageContext);
   const [carouselIndex, setCarouselIndex] = useState(0);
   const [postsPerPage, setPostsPerPage] = useState(3);
 
@@ -63,10 +65,12 @@ function News() {
     return posts;
   };
 
+  const newsHeader = language === "ENG" ? "NEWS" : "НОВИНИ";
+
   return (
     <section className="news-page">
       <div className="wrapper">
-        <h1 className="news-page-header">НОВИНИ</h1>
+        <h1 className="news-page-header">{newsHeader}</h1>
         <div className="news-carousel-wrapper">{renderPosts()}</div>
         <button onClick={goToPrevSlide} className="news-button-prev">
           <img
