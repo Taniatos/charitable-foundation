@@ -1,56 +1,77 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Numbers.css";
-import NumberCount from "./NumberCount"
+import NumberCount from "./NumberCount";
+import { LanguageContext } from "../Navigation/LanguageContext";
 
-export default function Numbers() {
+function Numbers() {
+  const { language } = useContext(LanguageContext);
+  
+  const content = {
+    UKR: {
+      descriptions: [
+        "РІЗНОГО ТИПУ ГЕНЕРАТОРІВ",
+        "ВІЙСЬКОВИХ АПТЕЧОК",
+        "ТОНН ГУМАНІТАРНОЇ ДОПОМОГИ",
+        "ЗАКРИТИХ ЗАПИТІВ ДЛЯ ВІЙСЬКОВИХ",
+      ],
+    },
+    ENG: {
+      descriptions: [
+        "DIFFERENT TYPES OF GENERATORS",
+        "MILITARY FIRST AID KITS",
+        "TONS OF HUMANITARIAN AID",
+        "COMPLETED REQUESTS FOR MILITARY",
+      ],
+    },
+  };
+
   return (
     <section className="numbers-page">
       <div className="wrapper numbers-wrapper">
-        {/* grid cards*/}
         <div className="row numbers-row">
-          {/* one */}
+          {/* One */}
           <div className="col-md number-box">
             <p className="number-each">
               <NumberCount targetNumber={20} />+
             </p>
             {/* <p className="number-descr-short">опис опис</p> */}
             <p className="number-descr-long">
-              РІЗНОГО ТИПУ ГЕНЕРАТОРІВ
+              {content[language].descriptions[0]}
             </p>
           </div>
-          {/* two */}
+          {/* Two */}
           <div className="col-md number-box">
             <p className="number-each">
               <NumberCount targetNumber={100} />+
             </p>
             {/* <p className="number-descr-short">опис опис</p> */}
             <p className="number-descr-long">
-              ВІЙСЬКОВИХ АПТЕЧОК
+              {content[language].descriptions[1]}
             </p>
           </div>
-          {/* three */}
+          {/* Three */}
           <div className="col-md number-box">
             <p className="number-each">
               <NumberCount targetNumber={45} />+
             </p>
             {/* <p className="number-descr-short">опис опис</p> */}
             <p className="number-descr-long">
-              ТОНН ГУМАНІТАРНОЇ ДОПОМОГИ
+              {content[language].descriptions[2]}
             </p>
           </div>
-          {/* four */}
+          {/* Four */}
           <div className="col-md number-box">
             <p className="number-each">
               <NumberCount targetNumber={60} />+
             </p>
             {/* <p className="number-descr-short">опис опис</p> */}
             <p className="number-descr-long">
-              ЗАКРИТИХ ЗАПИТІВ ДЛЯ ВІЙСЬКОВИХ
+              {content[language].descriptions[3]}
             </p>
           </div>
-          
         </div>
       </div>
     </section>
   );
 }
+export default Numbers;
