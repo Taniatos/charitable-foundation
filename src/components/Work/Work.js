@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import "./Work.css";
 import { LanguageContext } from "../Navigation/LanguageContext";
 
-export default function Work() {
+function Work() {
   const { language } = useContext(LanguageContext);
 
   const content = {
@@ -96,3 +96,4 @@ export default function Work() {
     </section>
   );
 }
+export default Work;
