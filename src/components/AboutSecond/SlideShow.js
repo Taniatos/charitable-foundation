@@ -10,6 +10,8 @@ const SlideShow = () => {
     "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/100/451/original/photo_4.png?1697247348",
     "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/100/452/original/photo_5.png?1697247356",
     "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/100/453/original/photo_6.png?1697247363",
+    "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/106/831/original/photo_7.png?1702332030",
+    "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/106/832/original/photo_8.png?1702332039",
   ];
 
   useEffect(() => {
