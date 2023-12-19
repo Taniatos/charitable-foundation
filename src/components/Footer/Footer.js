@@ -33,13 +33,13 @@ const scrollToTop = () => {
       <div className="wrapper">
         <div className="d-flex justify-content-between" id="footer">
           <div className="footer-left footer-logo-left footer-col">
-            <a className="nav-link" onClick={scrollToTop} title="Home">
+            <div className="nav-link"  onClick={scrollToTop} title="Home">
               <img
                 src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/100/056/original/logo.png?1697057798"
                 alt="logo"
                 className="footer-logo"
               />
-            </a>
+            </div>
           </div>
           <div className="footer-center text-center footer-col">
             <Link to="/donate">
