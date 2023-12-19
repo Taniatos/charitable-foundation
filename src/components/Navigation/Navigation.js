@@ -1,39 +1,44 @@
 // Navigation.js
 import React, { useContext } from "react";
+import { Link, useLocation } from "react-router-dom";
 import "./Navigation.scss";
 import { LanguageContext } from "../Navigation/LanguageContext";
 
 export default function Navigation() {
   const { language, toggleLanguage } = useContext(LanguageContext);
+  const location = useLocation();
 
-   const buttonClassName =
-     language === "ENG"
-       ? "language-switch-btn-eng"
-       : "language-switch-btn";
-
-
+  const buttonClassName =
+    language === "ENG" ? "language-switch-btn-eng" : "language-switch-btn";
 
   const menuItems = {
     UKR: ["Меню1", "Меню2", "Меню3", "Меню4", "Меню5", "Меню6"],
     ENG: ["Menu1", "Menu2", "Menu3", "Menu4", "Menu5", "Menu6"],
   };
 
+  const handleLogoClick = (e) => {
+    if (location.pathname === "/") {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
+
   return (
     <nav className="navbar navbar-dark navbar-expand-lg sticky-xl-top">
       <div className="navbar-content">
         <div className="logo-left">
-          <a
+          <Link
+            to="/"
             className="nav-link"
-            aria-current="page"
-            href="https://google.com/"
             title="Home"
+            onClick={handleLogoClick}
           >
             <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/100/056/original/logo.png?1697057798"
               alt="logo"
               className="logo"
             />
-          </a>
+          </Link>
         </div>
         <div className="transparent"></div>
         <div className="menu-right">

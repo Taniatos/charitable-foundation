@@ -1,8 +1,9 @@
 import React, { useContext } from "react";
+import { Link } from "react-router-dom";
 import "./MainScreen.css";
 import { LanguageContext } from "../Navigation/LanguageContext";
 
-function MainScreen({ onNavigate }) {
+function MainScreen() {
   const { language } = useContext(LanguageContext);
 
   const content = {
@@ -37,9 +38,11 @@ function MainScreen({ onNavigate }) {
             <h2 className={titleClass}>{content[language].title}</h2>
             <h1 className={nameClass}>{content[language].name}</h1>
             <p className={paragraphClass}>{content[language].text}</p>
-            <button className={buttonClass} type="button" onClick={onNavigate}>
-              {content[language].donate}
-            </button>
+            <Link to="/donate">
+              <button className={buttonClass}>
+                {content[language].donate}
+              </button>
+            </Link>
           </div>
           <div>
             <img

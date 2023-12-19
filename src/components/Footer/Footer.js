@@ -1,8 +1,9 @@
 import React, { useContext } from "react";
+import { Link } from "react-router-dom";
 import "./Footer.css";
 import { LanguageContext } from "../Navigation/LanguageContext";
 
-function Footer({ onDonateClick }) {
+function Footer() {
   const { language } = useContext(LanguageContext);
 
   const translations = {
@@ -21,18 +22,18 @@ function Footer({ onDonateClick }) {
   };
 
   const content = translations[language];
-
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+};
   return (
     <section className="footer-page">
       <div className="wrapper">
         <div className="d-flex justify-content-between" id="footer">
           <div className="footer-left footer-logo-left footer-col">
-            <a
-              className="nav-link"
-              aria-current="page"
-              href="https://google.com/"
-              title="Home"
-            >
+            <a className="nav-link" onClick={scrollToTop} title="Home">
               <img
                 src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/100/056/original/logo.png?1697057798"
                 alt="logo"
@@ -41,9 +42,10 @@ function Footer({ onDonateClick }) {
             </a>
           </div>
           <div className="footer-center text-center footer-col">
-            <button className="footer-button" onClick={onDonateClick}>
-              {content.donate}
-            </button>
+            <Link to="/donate">
+              {" "}
+              <button className="footer-button">{content.donate}</button>
+            </Link>
             <a href="https://google.com/">{content.about}</a>
             <a href="https://google.com/">{content.news}</a>
             <a href="https://google.com/">{content.documents}</a>

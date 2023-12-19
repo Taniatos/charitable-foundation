@@ -1,7 +1,8 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./DonationPage.css";
 
-function DonationPage({ onNavigate }) {
+function DonationPage() {
   const [isBankCopied, setIsBankCopied] = useState(false);
   const [isCardCopied, setIsCardCopied] = useState(false);
   const originalImageSrc =
@@ -13,9 +14,7 @@ function DonationPage({ onNavigate }) {
       .writeText(accountNumber)
       .then(() => {
         setIsBankCopied(true);
-        setTimeout(() => {
-          setIsBankCopied(false);
-        }, 3000);
+        setTimeout(() => setIsBankCopied(false), 3000);
       })
       .catch((err) => {
         console.error("Could not copy text: ", err);
@@ -23,14 +22,12 @@ function DonationPage({ onNavigate }) {
   };
 
   const copyCardNumberToClipboard = () => {
-    const cardNumber = "4149 4991 4672";
+    const cardNumber = "4149 4991 4672 0000";
     navigator.clipboard
       .writeText(cardNumber)
       .then(() => {
         setIsCardCopied(true);
-        setTimeout(() => {
-          setIsCardCopied(false);
-        }, 3000);
+        setTimeout(() => setIsCardCopied(false), 3000);
       })
       .catch((err) => {
         console.error("Could not copy text: ", err);
@@ -40,14 +37,14 @@ function DonationPage({ onNavigate }) {
   return (
     <section className="donation-page">
       <div className="donation-card">
-        <div className="back-to-main" onClick={onNavigate}>
+        <Link to="/" className="back-to-main">
           <img
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/103/705/original/arrow-left.png?1699731296"
             alt="arrow"
             className="back-to-main-arrow"
           />
           <p className="back-to-main-text">Назад на головну</p>
-        </div>
+        </Link>
 
         <div className="donation-current">
           <p className="donation-current-header">ПОТОЧНИЙ ЗБІР</p>
@@ -55,8 +52,8 @@ function DonationPage({ onNavigate }) {
           <a
             href="https://send.monobank.ua/jar/9kjhmWEXAJ"
             target="_blank"
+            rel="noopener noreferrer"
             className="donation-link"
-            rel="noreferrer"
           >
             <div className="donation-current-button">
               <img
@@ -78,7 +75,6 @@ function DonationPage({ onNavigate }) {
             <div
               className="donation-account"
               onClick={copyBankAccountNumberToClipboard}
-              onTouchEnd={copyBankAccountNumberToClipboard}
             >
               <p className="donation-account-number">
                 UA 84305299 000002600 6011018367
@@ -94,12 +90,12 @@ function DonationPage({ onNavigate }) {
               )}
             </div>
           </div>
+
           <div className="permanent-two">
             <p className="donation-permanent-subheader">Приватбанк</p>
             <div
               className="donation-privatbank"
               onClick={copyCardNumberToClipboard}
-              onTouchEnd={copyCardNumberToClipboard}
             >
               <p className="donation-privatbank-card">4149 4991 4672 0000</p>
               <p className="donation-privatbank-name">Кінах В.М.</p>
@@ -114,13 +110,14 @@ function DonationPage({ onNavigate }) {
               )}
             </div>
           </div>
+
           <div className="permanent-three">
             <p className="donation-permanent-subheader-last">Моно-банка</p>
             <a
               href="https://www.google.com"
               target="_blank"
+              rel="noopener noreferrer"
               className="donation-link"
-              rel="noreferrer"
             >
               <div className="donation-permanent-button">
                 <img
