@@ -17,6 +17,7 @@
 }
 .footer-logo-left .footer-logo {
   max-width: 130px;
+  cursor: pointer;
 }
 
 #footer > div {
