@@ -17,6 +17,7 @@
   padding-bottom: 24px;
 }
 .back-to-main {
+  text-decoration: none;
   display: flex;
   position: absolute;
   top: 12px;
