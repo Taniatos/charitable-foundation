@@ -14,7 +14,7 @@ function About() {
     },
     ENG: {
       text1:
-        "The Andriy Kvyatkovskyi Charitable Foundation was established in June 2022 in memory of Andriy Kvyatkovskyi, a hero warrior who died on April 29, 2022, near Popasna. The founders of the foundation are his close friends, UGCC priest Vasyl Kinakh and his wife Sofia. The foundation assists military personnel and their families, hospitals, and those in need from frontline areas.",
+        "The Andriy Kvyatkovskyi Charitable Foundation was set up in June 2022 in memory of Andriy Kvyatkovskyi, a hero warrior who died on April 29, 2022, near Popasna. The founders are his close friends, UGCC priest Vasyl Kinakh and his wife Sofia. The foundation assists military personnel and their families, hospitals, and those in need from frontline areas.",
       text2:
         "In the summer of 2023, the foundation's team expanded, which affected the scale of the foundation's activities. Now, the Andriy Kvyatkovskyi Charity Foundation has its own office and warehouse facilities. The main donor of the foundation is the New Forest Group for Ukraine, a British organization, with which the foundation has signed a memorandum of cooperation.",
     },
