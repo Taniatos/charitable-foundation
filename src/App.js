@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import "./App.css";
-import { LanguageProvider } from "../src/components/Navigation/LanguageContext";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { LanguageProvider } from "./components/Navigation/LanguageContext";
 import MainScreen from "./components/MainScreen/MainScreen";
 import DonationPage from "./components/DonationPage/DonationPage";
 import Navigation from "./components/Navigation/Navigation";
@@ -14,32 +15,33 @@ import Partners from "./components/Partners/Partners";
 import Footer from "./components/Footer/Footer";
 
 function App() {
-  const [currentPage, setCurrentPage] = useState("main");
-
-  const navigateToDonate = () => setCurrentPage("donate");
-  const navigateToMain = () => setCurrentPage("main");
-
   return (
     <LanguageProvider>
-      <div className="App">
-        {currentPage === "main" && (
-          <>
-            <Navigation />
-            <MainScreen onNavigate={navigateToDonate} />
-            <About />
-            <AboutSecond />
-            <Work />
-            <Numbers />
-            <News />
-            {/* <Documents /> */}
-            <Partners />
-            <Footer onDonateClick={navigateToDonate} />
-          </>
-        )}
-        {currentPage === "donate" && (
-          <DonationPage onNavigate={navigateToMain} />
-        )}
-      </div>
+      <Router>
+        <div className="App">
+          <Navigation />
+          <Routes>
+            <Route
+              exact
+              path="/"
+              element={
+                <>
+                  <MainScreen />
+                  <About />
+                  <AboutSecond />
+                  <Work />
+                  <Numbers />
+                  <News />
+                  {/* <Documents /> */}
+                  <Partners />
+                  <Footer />
+                </>
+              }
+            />
+            <Route path="/donate" element={<DonationPage />} />
+          </Routes>
+        </div>
+      </Router>
     </LanguageProvider>
   );
 }
